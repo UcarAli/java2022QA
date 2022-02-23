@@ -10,19 +10,17 @@ public class C03_SwapVariablesTempOlmadan {
         Orn    : sayi1=10 ve sayi2=20;
         kod calistiktan sonra
         sayi1=20 ve sayi2=10
-        */
+         */
 
-        int sayi1=10;
-        int sayi2=20;
-        System.out.println("Swap'dan once sayi1: " + sayi1 + ", sayi2 : "+ sayi2);
+        int sayi1 = 10;
+        int sayi2 = 20;
+        System.out.println("Swap'dan once sayi1: " + sayi1 + ", sayi2 : " + sayi2);
 
-        sayi1=sayi1+sayi2;
-        sayi2=sayi1-sayi2;
-        sayi1= sayi1-sayi2;
+        sayi1 = sayi1 + sayi2;
+        sayi2 = sayi1 - sayi2;
+        sayi1 = sayi1 - sayi2;
 
-        System.out.println("Swap'dan sonra sayi1: " + sayi1 + ", sayi2 : "+ sayi2);
-
-
+        System.out.println("Swap'dan sonra sayi1: " + sayi1 + ", sayi2 : " + sayi2);
 
 
     }
