@@ -2,6 +2,7 @@ package day02_variables;
 
 public class C01_Variables {
     public static void main(String[] args) {
+
         System.out.println("Java guzeldir.");
         int level=15;
         System.out.println(level);

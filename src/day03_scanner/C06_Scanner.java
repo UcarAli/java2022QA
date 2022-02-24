@@ -10,8 +10,10 @@ public class C06_Scanner {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen isminizi yaziniz");
+
         String isim=scan.nextLine();
         System.out.println("Lutfen soyisminizi giriniz");
+
         String soyisim= scan.nextLine();
         System.out.println("Isim - soysisim : " + isim + " " + soyisim);
 

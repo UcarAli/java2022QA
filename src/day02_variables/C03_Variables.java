@@ -3,7 +3,6 @@ package day02_variables;
 public class C03_Variables {
     public static void main(String[] args) {
 
-
         String ogrenciIsmi="Melih";
         ogrenciIsmi="Furkan";
         // bir variable declare edildikten sonra istedigimiz kadar deger degisimi yapabiliriz

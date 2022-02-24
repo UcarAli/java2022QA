@@ -6,6 +6,7 @@ public class C01_variables {
         // 1- Farkli 3 data turunde variable olusturun ve bunlari yazdirin
         String okulIsmi="Yildiz Koleji";
         System.out.println(okulIsmi); // Yildiz Koleji
+
         char ilkHarf;
         ilkHarf='H';
         System.out.println(ilkHarf); // H

@@ -10,6 +10,7 @@ public class C02_SwapVariables {
           kod calistiktan sonra
          sayi1=20 ve sayi2=10
          */
+
         int sayi1=10;
         int sayi2=20;
         System.out.println("Swap'dan once sayi1: " + sayi1 + ", sayi2 : "+ sayi2);

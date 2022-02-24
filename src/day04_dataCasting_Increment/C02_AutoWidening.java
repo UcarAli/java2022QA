@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class C02_AutoWidening {
     public static void main(String[] args) {
 
-
         boolean dogruMu=true;
         //String str=dogruMu; // sol String sag boolean olunca kabul etmiyor
         byte sayi1 = 44 ;

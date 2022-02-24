@@ -7,6 +7,7 @@ public class C05_IncrementDecrement {
         System.out.println(sayi+ 10); // 30
         // bu satirda sayiyi 10 artirmadim
         // sayinin 10 fazlasini yazdirdim
+
         System.out.println(sayi); // 20
         // eger atama yapmazsak sayida yaptigimiz artirma veya azaltma kalici olmaz
         sayi=sayi+10;
@@ -15,14 +16,17 @@ public class C05_IncrementDecrement {
         System.out.println(sayi); // 40
         System.out.println(sayi+=10); // 50
         System.out.println(sayi); // 50
+
         // bir variable'in degerini kalici olarak artirmak veya azaltmak isterseniz assignment sarttir
-        System.out.println("30.satir : "+ sayi++); // 50
-        System.out.println("31.satir : " + sayi); // 51
-        System.out.println("34.satir : " + ++sayi); // 52
-        System.out.println("35.satir : " + sayi); // 52
+        System.out.println("19.satir : "+ sayi++); // 50
+        System.out.println("20.satir : " + sayi); // 51
+        System.out.println("21.satir : " + ++sayi); // 52
+        System.out.println("22.satir : " + sayi); // 52
 
 
 
+        char a='B';
+        System.out.println("ASCII :" + (int)a);
 
 
     }

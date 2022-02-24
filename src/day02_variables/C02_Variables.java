@@ -13,6 +13,7 @@ public class C02_Variables {
         // println ile print arasindaki fark
         // println dediginizde yazdirma isleminden sonra alt satira gecerken
         // sadece print dedigimizde yazdirma isleminden sonra alt satira gecmez
+
         System.out.print(okulIsmi); //Star College
         System.out.print(okulIsmi);
     }
