@@ -12,5 +12,17 @@ public class Ter03 {
          Çift sayı degilse “3 basamaklı olmayan tek sayı yazdırın.”
          */
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Pozotof bir sayi giriniz");
+        int sayi= scan.nextInt();
+
+        
+
+
+
+
+
+
+
     }
 }
