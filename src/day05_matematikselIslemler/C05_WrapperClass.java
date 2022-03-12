@@ -1,7 +1,7 @@
 package day05_matematikselIslemler;
 
 public class C05_WrapperClass {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         short sayi1=20;
         Short sayi2=30;

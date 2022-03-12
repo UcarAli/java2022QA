@@ -1,6 +1,7 @@
 package day05_matematikselIslemler;
 
 public class C02_PreIncrementPostIncrement {
+
     public static void main(String[] args) {
 
         int sayi1=10;

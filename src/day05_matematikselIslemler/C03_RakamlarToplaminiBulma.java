@@ -8,7 +8,7 @@ public class C03_RakamlarToplaminiBulma {
         // kullacidan aldiginiz 4 basamakli bir sayinin rakamlar toplamini bulunuz.
 
         Scanner scan =new Scanner(System.in);
-        System.out.println("4 basamakli bir sazyi giriniz");
+        System.out.println("4 basamakli bir tamsayi giriniz");
         int sayi=scan.nextInt();
 
         int rakam=0;
