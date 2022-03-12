@@ -14,7 +14,7 @@ public class H_sayiBulmaca {
 
         Random rnd=new Random();
         int sayi=rnd.nextInt(100);
-
+//        System.out.println(sayi);
         Scanner scan = new Scanner(System.in);
         System.out.println("     *** Sayi Tahmin Etmece Oyunu ***\nBilgisayar 1 ile 100 arasinda bir sayi tuttu. Haydi bu sayiyi tahmin edelim. :)) ");
 
