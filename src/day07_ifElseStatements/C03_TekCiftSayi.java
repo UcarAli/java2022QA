@@ -20,7 +20,9 @@ public class C03_TekCiftSayi {
         // normalde bir tamsayi ya tektir veya cifttir, ucuncu bir durum yoktur
         // o zaman tek olmasi ve cift olmasini iki ayri if ile degil
         // if else ile tek statement'da yapmak daha guzel olur
+
         // ======== if else ile cozum=======
+
         if (sayi%2==0){
             System.out.println("girdiginiz sayi cift sayidir");
         } else {

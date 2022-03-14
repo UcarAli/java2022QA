@@ -1,6 +1,6 @@
 package day06_concatenation_Operators;
 
-public class C01_Concatenation {
+public class  C01_Concatenation {
     public static void main(String[] args) {
 
         String str1="Java";
