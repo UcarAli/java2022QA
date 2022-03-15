@@ -2,7 +2,7 @@ package day08_ifElseIfStatements;
 
 import java.util.Scanner;
 
-public class C02_NotuHarfeCevirme {
+public class  C02_NotuHarfeCevirme {
     public static void main(String[] args) {
 
         // Soru 7) Kullanicidan 100 uzerinden notunu isteyin.

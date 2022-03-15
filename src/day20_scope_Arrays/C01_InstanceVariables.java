@@ -23,7 +23,7 @@ public class C01_InstanceVariables {
         System.out.println(obj2.bransIsmi); // Java
 
         obj1.okuldaMi=true;
-        System.out.println(obj2.okuldaMi); //
+        System.out.println(obj2.okuldaMi); // false
 
 
     }
