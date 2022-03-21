@@ -35,6 +35,7 @@ public class C08_ListedeElemanlarinYeriniDegistime {
 
         int swap=0;
         swap=sayilar[ikinciIndex];
+        e
 
         return sayilar;
     }
