@@ -1,4 +1,4 @@
-package day24_list;
+package day24_lists;
 
 import java.util.ArrayList;
 import java.util.List;

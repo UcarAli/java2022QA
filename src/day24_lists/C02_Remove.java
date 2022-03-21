@@ -1,6 +1,4 @@
-package day24_list;
-
-import day23_multiDimensionalArrays.C06_Arrays;
+package day24_lists;
 
 import java.util.ArrayList;
 import java.util.List;

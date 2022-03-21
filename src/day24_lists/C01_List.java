@@ -1,4 +1,4 @@
-package day24_list;
+package day24_lists;
 
 import day23_multiDimensionalArrays.C06_Arrays;
 
