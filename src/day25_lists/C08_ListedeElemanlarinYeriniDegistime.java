@@ -18,7 +18,7 @@ public class C08_ListedeElemanlarinYeriniDegistime {
         sayilar.add(6);
         sayilar.add(1);
         sayilar.add(7);
-        // System.out.println("sayilar = " + sayilar); // sayilar = [1, 3, 5, 3, 5, 6, 1, 7]
+        System.out.println("sayilar = " + sayilar); // sayilar = [1, 3, 5, 3, 5, 6, 1, 7]
 
         int ilkIndex = 2;
         int ikinciIndex=5;
@@ -34,8 +34,14 @@ public class C08_ListedeElemanlarinYeriniDegistime {
         // indexleri kontrol edip sinirin otesinde index verildiyse uyari mesaji yazdirin
 
         int swap=0;
-        swap=sayilar[ikinciIndex];
-        e
+
+        if (ilkIndex> sayilar.size()-1 || ikinciIndex> sayilar.size()-1 || ilkIndex<0 || ikinciIndex<0) {
+            System.out.println("Lutfen gecerli bir index girin.");
+        } else {
+            swap=sayilar.get(ikinciIndex);
+            sayilar.set(ikinciIndex, sayilar.get(ilkIndex));
+            sayilar.set(ilkIndex, swap);
+        }
 
         return sayilar;
     }
