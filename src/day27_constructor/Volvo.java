@@ -8,7 +8,7 @@ public class Volvo {
     boolean elektrikliMi;
     int yil;
     String yakit;
-    boolean otomatikPilot=otomaipkPilotSorgusu();
+    boolean otomatikPilot=otomatikPilotSorgusu();
     int maxHiz=maxHizAta();
 
 
@@ -17,13 +17,19 @@ public class Volvo {
         elektrikliMi=elk;
         yil=yl;
         yakit=ykt;
+        maxHiz=maxHizAta();
+        otomatikPilot=otomatikPilotSorgusu();
+
     }
 
     public Volvo(){
+
     }
 
     public int maxHizAta() {
         int maxHiz=0;
+        System.out.println("soru : " + elektrikliMi);
+
         if (elektrikliMi){
             maxHiz=160;
         }else {
@@ -32,7 +38,7 @@ public class Volvo {
         return maxHiz;
     }
 
-    public boolean otomaipkPilotSorgusu() {
+    public boolean otomatikPilotSorgusu() {
         boolean sonuc=false;
         if (elektrikliMi){
             sonuc=true;

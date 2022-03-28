@@ -1,5 +1,6 @@
 package exercises;
 
+import java.security.SecureRandom;
 import java.util.Scanner;
 
 public class C09 {
@@ -10,8 +11,6 @@ public class C09 {
         int num1= scan.nextInt();
         int num2= scan.nextInt();
 
-        int gcd=1;
-        int lcm=1;
 
 
 

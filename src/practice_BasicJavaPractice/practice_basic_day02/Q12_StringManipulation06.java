@@ -2,7 +2,7 @@ package practice_BasicJavaPractice.practice_basic_day02;
 
 import java.util.Scanner;
 
-public class Q12_StringManipulation06 {
+public class         Q12_StringManipulation06 {
 
 		/* String girildiginde ilk iki karakteri haric
 		    string return eden java programi yaziniz
