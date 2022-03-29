@@ -8,10 +8,10 @@ public class C09 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("enter 2 integer");
-        int num1= scan.nextInt();
-        int num2= scan.nextInt();
 
+        for (int i = 0; i <255 ; i++) {
 
+        }
 
 
 
