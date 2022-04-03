@@ -1,23 +1,19 @@
-package exercises;
+package replit;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class C09 {
+class ENG_For_while_3 {
 
     public static void main(String[] args) {
         /**
-         * Ask user to enter 2 integer then find GCD (Greatest Common Divisor)
-         * and LCM (Least Common Multiple)
+         * Write a code that returns the duplicate chars in a String array.(interview Question)
          *
          * Input :
          *
-         * 30 and 40
+         * String str=“Javaisalsoeasy”
          *
-         * Expected OutPut:
-         *
-         * GCD for 30 and 40 = 10
-         *
-         * LCM for 30 and 40 = 120
+         * Output: [a, s]
          */
 
         String str="Javaisalsoeasy";
