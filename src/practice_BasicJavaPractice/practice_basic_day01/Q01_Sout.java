@@ -1,6 +1,6 @@
 package practice_BasicJavaPractice.practice_basic_day01;
 
-public class Q01_Sout {
+public class  Q01_Sout {
 
          /*
   Konsolda asagidaki ciktiyi yazdiriniz

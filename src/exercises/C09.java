@@ -1,5 +1,6 @@
 package exercises;
 
+
 import java.util.Arrays;
 
 public class C09 {
