@@ -4,7 +4,20 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ENG_List_01 {
-
+    /**
+     * Write a Java program to get a String from user as input and
+     * find the maximum occurring character in that string.
+     * (Ignore case sensitivity)
+     *
+     * input :
+     *
+     * Learning java is easy
+     *
+     * output:
+     *
+     * maximum occurring character is : a
+     *
+     */
     public static void main(String[] args) {
 
         String str ="Learning java is easy";
@@ -17,7 +30,8 @@ public class ENG_List_01 {
 
         for (int i = 0; i < list.size() ; i++) {
             for (int j = i+1; j < list.size() ; j++) {
-                if (list.get(i).contains(list.get(j))){
+
+                if (list.get(i).equalsIgnoreCase(list.get(j))){
                     sayac++;
                 }
 

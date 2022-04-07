@@ -1,6 +1,6 @@
-package exercises;
+package replit;
 
-public class C1 {
+public class ENG_Method_Array_6 {
     /**
      *
      * Write a method that accepts an integer array as input and
