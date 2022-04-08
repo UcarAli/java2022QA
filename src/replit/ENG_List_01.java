@@ -10,11 +10,9 @@ public class ENG_List_01 {
      * (Ignore case sensitivity)
      *
      * input :
-     *
      * Learning java is easy
      *
      * output:
-     *
      * maximum occurring character is : a
      *
      */
