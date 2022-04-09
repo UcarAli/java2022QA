@@ -1,44 +1,42 @@
 package exercises;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class C1 {
-    /**
-     *
-     * Write a method that accepts an integer array as input and
-     * prints the minimum and the maximum numbers from given array
-     *
-     * Input : {3,2,5,4,1,6}
-     *
-     * Output :
-     * min: 1\
-     * max: 6
-     *
-     */
+
     public static void main(String[] args) {
 
-        int arr[] = {3,2,5,4,1,6};
+        String  input ="eeewaaaq";
+        String arr[]=input.split("");
 
-        miMaxNum(arr);
+        List<String> list = Arrays.asList(arr);
 
-    }
+        int sayac=0;
+        int sayac2=0;
+        String maxHarf="";
 
-    private static void miMaxNum(int[] arr) {
-        int min=arr[0];
-        int max = arr[0];
 
-        for (int i = 0; i <arr.length ; i++) {
-            if (arr[i]>max){
-                max=arr[i];
+        for(int i=0; i<list.size();i++){
+            for (int j=i+1;j<list.size();j++){
+                if(list.get(i).equalsIgnoreCase(list.get(j))){
+                    sayac++;
+                }
             }
-            if (arr[i]<min){
-                min=arr[i];
+            if(sayac>sayac2){
+                sayac2=sayac;
+                maxHarf=list.get(i);
+            }else if(sayac==sayac2){
+                maxHarf=maxHarf+", "+list.get(i);
             }
+            sayac=0;
+
+
         }
-        System.out.println("min: " + min);
-        System.out.println("max: " + max);
+        System.out.println("maximum occurring character is : "+maxHarf);
+
 
 
 
     }
-
-
 }

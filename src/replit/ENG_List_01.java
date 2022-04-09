@@ -2,6 +2,7 @@ package replit;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class ENG_List_01 {
     /**
@@ -18,29 +19,38 @@ public class ENG_List_01 {
      */
     public static void main(String[] args) {
 
-        String str ="Learning java is easy";
-        String arr[]=str.split("");
+        //Scanner scan = new Scanner(System.in);
+        //System.out.println("enter a sentence");
+        //String input= scan.nextLine();
+        String  input ="Learning java is easy";
+        String arr[]=input.split("");
+
         List<String> list = Arrays.asList(arr);
 
         int sayac=0;
-        int maxSayac=0;
-        String maxChar="";
+        int sayac2=0;
+        String maxHarf="";
 
-        for (int i = 0; i < list.size() ; i++) {
-            for (int j = i+1; j < list.size() ; j++) {
 
-                if (list.get(i).equalsIgnoreCase(list.get(j))){
+        for(int i=0; i<list.size();i++){
+            for (int j=i+1;j<list.size();j++){
+                if(list.get(i).equalsIgnoreCase(list.get(j))){
                     sayac++;
                 }
+            }
+            if(sayac>sayac2){
+                sayac2=sayac;
+                maxHarf=list.get(i);
+            }
+//            else if(sayac==sayac2){
+//                maxHarf=maxHarf+", "+list.get(i);
+//            }
 
-            }
-            if (sayac>maxSayac){
-                maxSayac++;
-                maxChar= list.get(i);
-            }
             sayac=0;
+
+
         }
-        System.out.println("maximum occurring character is : "+maxChar);
+        System.out.println("maximum occurring character is : "+maxHarf);
 
 
     }
