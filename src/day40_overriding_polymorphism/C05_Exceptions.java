@@ -18,15 +18,18 @@ public class C05_Exceptions {
 
             try {
                 sayi = scan.nextInt();
+                toplam+=sayi;
             } catch (Exception e) {
-
-
+                String hataliGiris=scan.next();
+                if (hataliGiris.equalsIgnoreCase("q")){
+                    break;
+                }else {
+                    System.out.println("hatali giris");
+                }
             }
 
-            toplam+=sayi;
-
-
         } while (toplam<500);
+        System.out.println("girdiginiz sayilarin toplami : "+toplam);
 
 
 
