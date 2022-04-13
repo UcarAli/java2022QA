@@ -1,39 +1,36 @@
 package exercises;
 
-import java.util.Arrays;
-import java.util.List;
+
+import java.util.Scanner;
 
 public class C1 {
+    /**
+     *
+     * 	 Write a java program which accept a sentence as parameter, than reverses sentence by using StringBuilder
+     *    and checks if sentence is palindrome or not
+     *    (without case sensitivity)
+     *    Eg : input : I love Java
+     *    Output: "Reversed sentence : avaJ evol I .
+     *    It is not a palindrome"
+     */
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String str=scan.nextLine();
 
-        String  input ="eeewaaaq";
-        String arr[]=input.split("");
+        StringBuilder input = new StringBuilder(str);
 
-        List<String> list = Arrays.asList(arr);
+        if (input.toString().equalsIgnoreCase(input.reverse().toString())){
+            System.out.println(input);
+            System.out.println("It is a palindrome");
 
-        int sayac=0;
-        int sayac2=0;
-        String maxHarf="";
-
-
-        for(int i=0; i<list.size();i++){
-            for (int j=i+1;j<list.size();j++){
-                if(list.get(i).equalsIgnoreCase(list.get(j))){
-                    sayac++;
-                }
-            }
-            if(sayac>sayac2){
-                sayac2=sayac;
-                maxHarf=list.get(i);
-            }else if(sayac==sayac2){
-                maxHarf=maxHarf+", "+list.get(i);
-            }
-            sayac=0;
-
-
+        }else {
+            System.out.println(input);
+            System.out.println("It is not a palindrome");
         }
-        System.out.println("maximum occurring character is : "+maxHarf);
+        System.out.println(input.equals(input));
+
+
 
 
 
