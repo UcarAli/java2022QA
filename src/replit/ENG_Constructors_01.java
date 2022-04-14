@@ -57,6 +57,9 @@ public class ENG_Constructors_01 {
     }
 
 
+
+
+
     private static void sonuc() {
         if (player1_Puan > player2_Puan) {
             System.out.println("Invalid word,end the game");
