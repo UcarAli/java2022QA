@@ -8,7 +8,6 @@ public class C05_Arrays {
         // Verilen bir array'e yeni bir element ekleyen bir method olusturun
 
         int arr[]= {3,5,7};
-        // arr[3]=8;  // array de olmayan bir index e atama yapamayiz
 
         // arr[3]=8;  array'de olmayan bir index'e atama yapamayiz
 

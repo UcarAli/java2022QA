@@ -13,6 +13,23 @@ public class Q10 {
 
          */
 
+        String str = "GayetBasarılı";
+        String arr[]=str.split("Gayet");
+        //System.out.println("arr = " + Arrays.toString(arr));
+        arr[0]="Coook";
+        System.out.println("arr = " + Arrays.toString(arr));
+
+        String newStr=arr[0]+arr[1];
+        System.out.println("newStr = " + newStr);
+
+        String arr2[]=new String[1];
+        arr2[0]=arr[0]+arr[1];
+        System.out.println("arr2 = " + Arrays.toString(arr2));
+
+
+
+
+
 
     }
 

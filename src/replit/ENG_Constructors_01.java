@@ -51,6 +51,8 @@ public class ENG_Constructors_01 {
             case "H":
                 sonuc();
                 break;
+            default:
+                System.out.println("Lutfen gecerli");
         }
 
         ikincioyuncuHarfgirmetodu();

@@ -12,7 +12,7 @@ public class C08_Split {
         String harf="e";
 
         harfKacKereKullanilmis(cumle, harf);
-        
+
 
     }
 

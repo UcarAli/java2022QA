@@ -13,7 +13,7 @@ public class C06_BinarySearch {
 
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr)); // [0, 1, 3, 4, 5, 6, 9, 9, 25, 45]
-        System.out.println(Arrays.binarySearch(arr,istenenSayi)); // -9
+        System.out.println(Arrays.binarySearch(arr,istenenSayi)); // -9  // sayi carsa index veriyor.index ) dan baslar. sayi yosa olasi siranin index ini 0 dan geriye sayiyor, -1 den baslayarak. dolayisiyla olsaydi 9. sirada olacak bir sayiyi -9 veriyor.
 
         // eger olmayan bir elemani aratirsak
         // Java bulamadigini gostermek icin - isareti koyar
