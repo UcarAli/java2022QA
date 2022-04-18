@@ -24,6 +24,5 @@ public class C03_IllegalArgumentException {
             System.out.println("Uygun yas girdiniz, tesekkurler");
         }
 
-
     }
 }

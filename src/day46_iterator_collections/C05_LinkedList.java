@@ -9,8 +9,8 @@ public class C05_LinkedList {
         LinkedList<Integer> list = new LinkedList<>();
         list.add(5);
         list.add(10); // add method'u List'den geldigi icin hep sona ekler
-        list.addFirst(11); // addFirst deque'den gelir
-        list.addLast(12); // addLast deque'den gelir
+        list.addFirst(11); // addFirst deque'den gelir. basa ekler
+        list.addLast(12); // addLast deque'den gelir. sona ekler.
 
         System.out.println(list);
         list.add(2,25);
