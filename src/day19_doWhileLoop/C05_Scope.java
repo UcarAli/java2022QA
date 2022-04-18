@@ -12,7 +12,7 @@ public class C05_Scope {
     //    ama loop'un disinda kullanilamaz
 
     static String kurs="Java"; // static
-    int level=10;              // static(instance)
+    int level=10;              // instance
     static int sayi4;
 
 
@@ -32,8 +32,9 @@ public class C05_Scope {
 
         int sayi2;
 
-        sayi4++; // class seviyesinde olusturup deger atamadigim sayi4'u artirmamama java itiraz etmiyor
+        sayi4++; // class seviyesinde olusturup deger atamadigim sayi4'u artirmamama java itiraz etmiyor. cunku class seviyesinde deger atamazsah default deger alir. int icin default deger 0 dir.
         // sayi2++; // ama main method icinde olusturup deger atamadigim sayiyi artirmama java izin vermiyor
+
     }
 
     public static void method1(){
