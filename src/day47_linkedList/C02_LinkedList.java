@@ -7,7 +7,7 @@ import java.util.List;
 public class C02_LinkedList {
     public static void main(String[] args) {
 
-        // List'den gelen ozellikleri biliyoruz
+         // List'den gelen ozellikleri biliyoruz
         // onun icin Deque'den gelen ozelliklere bakalim
 
         Deque<Integer> ll1 = new LinkedList<>();
@@ -26,7 +26,7 @@ public class C02_LinkedList {
         System.out.println(ll1); // [10, 20, 30]
         ll1.offerLast(40); // sona ekler ve bize true dondurur
         System.out.println(ll1); // [10, 20, 30, 40]
-        ll1.offerFirst(50);
+        ll1.offerFirst(50); // basa ekler ve bize true dondurur
         System.out.println(ll1); // [50, 10, 20, 30, 40]
         System.out.println(ll1.offerFirst(60)); // true
         System.out.println(ll1); // [60, 50, 10, 20, 30, 40]
