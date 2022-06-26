@@ -1,0 +1,59 @@
+
+*** Elif H. ile Intellij gitHub pratik videosundan notlar ***
+
+Local de proje olusturulduktan sonra ilk once bir defalik localden remote master olusturarak push etme
+    - git init
+    - git add .
+    - git commit -m "first commit"
+    - git remote add origin https://github.com/...
+    - git push -u origin master
+
+veya github da repositorie olusturup local'e clone yaptiktan sonra local master'dan remote master'a
+- git add .
+- git commit -m "mesaj"
+- git push -> proje olusturduktan sonra ilk defa da calismaz.
+veya
+- git push -u origin master --> local master'dan remote master'a bir defalik ilk seferde
+
+****************
+NOT : Team olarak calisirken herzaman branch uzerinde calismaliyiz. master da calisimaz.
+****************
+
+Local de branch olusturup sonrasinda remote da branch olusturarak remote branch'e push etme
+- git branch
+- git branch branchAdi -> branch olusturmak icin
+- git checkout branchAdi -> branch degistirme
+- git branch -> herzaman kontrol etmekte fayda var :)
+- git add .
+- git commit -m "mesaj"
+- git push -> ilk defa da calismaz. cunku remote da ayni isimde branch yok. alt satirda ki gibi branch adimizla ayni adli remote da branch olusturarak push etmek lazim
+- git push --set-upstream origin BranchAdi  -> remote da branch olusturulmamissa bir defalik yap. Remote da local branch adimizla ayni
+    adda branch olusturarak push ettik.
+
+
+remote branch e push edildikten sonra remote master'a merge etme
+- sonrasinda gitHub uzerinden "Compera & pull request" ve/veya "Create pull request" sonra "Merge pull request" sonra "Confirm Merge"
+- eger "Compera & pull request" gorulmezse "Pull requests" orda da yoksa "New pull request" e dusmustur ordan uzerine tiklayip "Create pull request" sonra "Merge pull request" sonra "Confirm Merge"
+
+veya consoldan yapmak istersek remote branch e push ettikten sonra remote master'a merge etme
+- git checkout master
+- git branch -> herzaman kontrol etmekte fayda var :)
+- git pull
+- git merge branchAdi
+- git add .
+- git commit -m "mesaj"
+- git push
+
+
+***************************
+Team le calisirken localde kendi branch'mizde degisiklik yapmadan once
+- git checkout master
+- git branch -> herzaman kontrol etmekte fayda var :)
+- git pull
+- git checkout branchAdi
+- git branch -> herzaman kontrol etmekte fayda var :)
+- git merge master
+
+- sonrasinda local branch de calismamizi yapip bitirdikten sonra remote branche yukarilarda biryerlerde:) anlatildigi gibi push et
+- eger Team Lead onay verir merge ederse; local master gecip pull yap. sonrasinda local branche gecip git merge master yap
+- eger Team Lead onay verir ve bizim merge etmemizi isterse; yukarilarda biryerlerde:) anlatildigi gibi  remote branch e push ettikten sonra remote master'a merge et ()

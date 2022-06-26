@@ -66,7 +66,7 @@ public class C01_Maps {
 
         System.out.printf("| %-30.49s |"," --------------------------------------------------");
         System.out.println();
-        System.out.printf("| %-10S | %-10S | %-10S | %-10S | %-10S","Numara", "isim", "Soyisim", "Brans","");
+        System.out.printf("| %-10S | %-10S | %-10S | %-10S | %-10S |","Numara", "isim", "Soyisim", "Brans","");
         System.out.println();
         System.out.printf("| %-30.49s  |"," --------------------------------------------------");
         System.out.println();

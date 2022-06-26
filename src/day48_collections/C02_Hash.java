@@ -20,7 +20,7 @@ public class C02_Hash {
         System.out.println(sayiKumesi.hashCode()); // 10
 
         sayiKumesi.add(20);
-        System.out.println(sayiKumesi.hashCode()); // 20
+        System.out.println(sayiKumesi.hashCode()); // 30
 
     }
 }

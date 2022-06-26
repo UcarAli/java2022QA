@@ -1,4 +1,4 @@
-GIT KOMUTLARI
+         GIT KOMUTLARI
 ---------------
 
 https://www.youtube.com/watch?v=YEh92Grwi70
@@ -206,7 +206,9 @@ git commit --amend -m "<commit_mesajı>
 Belirli bir commit değiştirme
 git rebase -i HEAD~3
 
-Komutu ile son 3 commiti getirdik. Deşitireceğimiz commitin mesajınının başını pick den reword olarak değiştiriyoruz. Kaydedip çıkınca commit mesajınını bulunduğu ekran çıkıyor.Yeni commit mesajımızı yazıp kaydedip çıkıyoruz. Sonra yapılan değişiklikleri uzaktaki depoya puslamak için:
+Komutu ile son 3 commiti getirdik. Deşitireceğimiz commitin mesajınının başını pick den reword olarak değiştiriyoruz.
+Kaydedip çıkınca commit mesajınını bulunduğu ekran çıkıyor.Yeni commit mesajımızı yazıp kaydedip çıkıyoruz.
+Sonra yapılan değişiklikleri uzaktaki depoya puslamak için:
 
 git push --force <remote> <branch_adı>
 
@@ -273,17 +275,11 @@ git checkout <branch_adı>
 Komutunu verdiğimizde var olan branchlar arasında geçiş sağlarız.
 
 Var olan Branchları listeleme
-git branch
+git branch --> Localdeki branchları listeler.
 
-Localdeki branchları listeler.
+git branch -r --> Uzak depodaki branchları listeler.
 
-git branch -r
-
-Uzak depodaki branchları listeler.
-
-git branch -a
-
-Hem localdeki hem uzak repodaki branchları listler.
+git branch -a --> Hem localdeki hem uzak repodaki branchları listler.
 
 Localdeki Branchı silme
 git branch -d <branch_adı>
@@ -295,22 +291,23 @@ git push <remote> --delete <branch_adı>
 
 Komutunu verdiğimizde adını yazdığımız branch uzakdaki depodan silinir.
 
-Branch birleştirme
-git checkout <birleştirilecek_branch_adı>
 
+
+Branch birleştirme
+
+git checkout <birleştirilecek_branch_adı>
 Birleştireceğimiz brancha geçiş yaptık.
 
 git merge <birleşecek_branch_adı>
-
 Komutunu vererek iki branchı birleştirdik.
 
 git push -u <remote> <branch_adı>
-
 Birleştirdiğimiz branchları uzakdaki repoya pushladık.
 
-Branch ismi değiştirme
-git branch -m <branch_adı> <yeni_branch_adı>
 
+Branch ismi değiştirme
+
+git branch -m <branch_adı> <yeni_branch_adı>
 Komutu ile localde branchımızın adını değiştirdik.
 
 git push <remote> :<eski_branch_adı> <yeni_branch_adı>
@@ -325,14 +322,16 @@ git reset <dosya_adı>
 Projede belirli bir commite geri dönme
 git reset --soft <commit_id>
 
-Komutunu verdiğimizde id sini yazdığımız commite geri döneriz fakat commitler silinmez. Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
+Komutunu verdiğimizde id sini yazdığımız commite geri döneriz fakat commitler silinmez.
+Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
 
 git push <remote> <branch_adı> --force
 
 Projede belirli bir commite geri dönme ve ondan sonraki commitleri silme
 git reset --hard <commit_id>
 
-Komutunu verdiğimizde id sini yazdığımız commite geri döneriz ve geri döndüğümüz committen sonraki bütün commitler silinir. Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
+Komutunu verdiğimizde id sini yazdığımız commite geri döneriz ve geri döndüğümüz committen sonraki bütün commitler silinir.
+Sonra bu değişiklikleri uzaktaki depoya pushlamak için:
 
 git push <remote> <branch_adı> --force
 

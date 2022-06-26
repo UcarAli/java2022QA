@@ -14,19 +14,21 @@ public class C04_ArraydentekrarlariSilme {
         Integer arr[]= {3,5,4,6,3,1,2,7,8,6,1,4,2,8};
 
         arr = benzersizYap(arr);
+        System.out.println("arr(unique elementler olusan bir array) = " + Arrays.toString(arr));
         System.out.println(Arrays.toString(arr));
     }
 
     private static Integer[] benzersizYap(Integer[] arr) {
-        // Set<Integer> benzersizSet=new HashSet<>(); // bunla da olur
-        Set<Integer> benzersizSet=new TreeSet<>(); // Bunlada olur. sirali yapar
+        // Set<Integer> benzersizSet=new HashSet<>(); // bunla da olur. HashSet daha hizli
+        Set<Integer> benzersizSet=new TreeSet<>(); // Bunlada olur. sirali yapar . TreeSet dogalsirali benzersiz
         for (Integer each: arr
         ) {
             benzersizSet.add(each);
         }
-        System.out.println(benzersizSet);
+        System.out.println("benzersizSet = " + benzersizSet);
 
         // Set'de index yapisi yoktur, dolayisiyla forLoop kullanamayiz
+
         Integer arrBenzersiz[]=new Integer[benzersizSet.size()];
         int index=0;
         for (Integer each: benzersizSet

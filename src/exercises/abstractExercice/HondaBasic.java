@@ -32,7 +32,6 @@ public class HondaBasic extends Araba implements icAraba, disAraba{
     }
 
     public static void main(String[] args) {
-
 //        HondaBasic.move();
 //        HondaBasic.direksiyon();
 //        HondaBasic.kapi();
